@@ -177,3 +177,132 @@ caption {
    font-weight: bold;
     margin-bottom: 10px;
 }
+
+.contat-card  {
+	background: #0f3a57;
+	color: #24708c;
+	padding: 20px 24px 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    margin: 10px auto;
+    width: 100%;                  
+    box-sizing: border-box;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: left;              /* override global centered h2 */
+}
+
+.logo-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #1d789869;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Layout of the form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Each row: label on left, field on right */
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.form-row label {
+    font-size: 0.95em;
+    text-align: left;
+}
+
+/* First/Last name side-by-side */
+.name-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+/* Text fields, selects, textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 7px 9px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.95em;
+    background-color: #ffffff;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Checkbox row */
+.checkbox-row .checkbox-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* Buttons row (only right column) */
+.buttons-row {
+    grid-column: 2 / 3;
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+/* Buttons */
+.btn {
+    padding: 7px 18px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.submit-btn {
+    background-color: #1e7ab0;
+    color: #ffffff;
+}
+
+.clear-btn {
+    background-color: #e3edf5;
+    color: #0f3a57;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
