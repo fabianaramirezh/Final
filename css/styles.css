@@ -320,29 +320,7 @@ caption {
     box-sizing: border-box;
 }
 
-.review-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
 
-.review-header h2 {
-    margin: 0;
-    font-size: 1.2em;
-    text-align: left;              /* override global centered h2 */
-}
-
-.logo-circle {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: #1d789869;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.9em;
 }
 
 /* Layout of the form */
@@ -355,7 +333,7 @@ caption {
 /* Each row: label on left, field on right */
 .form-row {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 120px minmax(0, 1fr);
     column-gap: 10px;
     align-items: center;
 }
@@ -368,7 +346,7 @@ caption {
 /* First/Last name side-by-side */
 .name-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 8px;
 }
 
