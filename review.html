@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- 
+		Final Project CMIS 410
+		Author: fabi
+		Date: 11/4
+		
+		These web pages are for educational purposes only, all content should be considered fictional. 
+	
+	-->
+
+<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+<title>Trading Network</title>
+   <link href="css/styles.css" rel="stylesheet" />
+   
+
+</head>
+
+<body>
+
+<div id = "container" 
+> 
+
+<header> 
+
+<a href="review.html"><img src="images/tdlogo.png" alt="Trading Network Logo"/></a>
+
+</header> 
+
+<div id = "wrapper">
+		 
+<nav> 
+	<ul>
+	  <li><a href = "index.html">Home</a></li>
+	  <li><a href = "services.html">Services</a></li>
+	  <li><a href = "contactus.html">Contact Us</a></li>
+	  <li><a href = "review.html">Review</a></li>
+	</ul>
+</nav> 
+	 
+<article id = "main"> 
+
+	<div class="review-wrapper">
+    <div class="review-card">
+        <div class="review-header">
+            <div class="logo-circle">TN</div>
+            <h2>Review Trading Network</h2>
+        </div>
+
+        <form class="review-form" action="#" method="post">
+            <!-- Name -->
+            <div class="form-row">
+                <label for="firstName">Name:</label>
+                <div class="name-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="First" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+                </div>
+            </div>
+
+            <!-- Employee Name -->
+            <div class="form-row">
+                <label for="empolyee">Employee Name:</label>
+                <input type="employee" id="employee" name="employee" placeholder="Name of employee" required>
+            </div>
+
+            <!-- Date -->
+            <div class="form-row">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" placeholder="date you were attended">
+            </div>
+
+            <!-- Subject -->
+            <div class="form-row">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Choose an option</option>
+                    <option value="general">General Review</option>
+                    <option value="complaints">Complaints</option>
+                    <option value="suggestions">Suggestions</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Comments -->
+            <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" placeholder="Comments"></textarea>
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="form-row buttons-row">
+                <button type="submit" class="btn submit-btn">Submit</button>
+                <button type="reset" class="btn clear-btn">Clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</article> <!-- end main -->
+
+<aside> 
+
+<h3>Our Office Hours</h3>
+
+	<p>Monday: closed</p>
+	<p>Tuesday: 6 p.m. - 9 p.m.</p>
+	<p>Wednesday:  9 a.m. - 5 p.m.</p>
+	<p>Thursday: closed</p>
+	<p>Friday: 6 p.m. - 11 p.m.</p>
+	<p>Saturday: 10 a.m. - 5 p.m.</p>
+	<p>Sunday: 12 p.m - 5 p.m.</p>
+
+ 
+<img src = "images/schedule.jpg" alt = "Client Scheduling a Consult"  />
+
+
+
+</aside>   
+
+<footer> 
+	
+	<p>Trading Network<br />
+	123 Michigan Ave &bull; Chicago, IL 60611<br />
+	<a href = "https://instagram.com" target="_blank">Instagram</a> |
+	<a href = "https://twitter.com" target="_blank">Twitter</a> |
+	<a href= "https://www.google.com/maps" target="_blank">Directions</a> |
+	<a href = "tel:+1234567777">Telephone</a> |
+	<a href = "mailto:info@tradingnetwork.com">Email Us</a></p>
+
+</footer>  
+
+</div> <!-- end wrapper --> 
+</div> <!-- end container -->
+
+</body>
+</html>
